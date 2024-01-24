@@ -1,0 +1,317 @@
+:root {
+    --abu: #5c6769;
+    --bg: white;
+    --shadow: 0 2px 2px rgb(0 0 0 /0.5)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--bg);
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+.navbar{
+  box-shadow:  0 .2px 3px rgba(15, 13, 13, 0.5);
+}
+.navbar-brand{
+    transition: 0.5s;
+    display: none;
+}
+.navbar-brand img{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+}
+.nav-scale{
+    transform: scale(1.4);
+    margin: 25px 0 20px 40px;
+}
+
+.hero h2{
+    color: #666;
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 0.4rem;
+    text-shadow: var(--shadow);
+}
+.navbar-brand span{
+    color: #110a0a;
+    font-size: 1.1rem;
+ text-shadow: 0 1px 2px rgb(0 0 0 /0.5);
+}
+.about span, .contact span{
+    text-transform: uppercase;
+    color: #666;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 0.4rem;
+    text-shadow: var(--shadow);
+}
+.about p, .contact p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.timeline{
+    list-style: none;
+    padding: 1.4rem 0;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.timeline::before{
+    content: '';
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 1px;
+    background-color: #ccc;
+    left: 50%;
+}
+
+.timeline li{
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.timeline li::before,
+.timeline li::after{
+    content: '';
+    display: table;
+}
+
+.timeline li::after{
+    clear: both;
+}
+.timeline li .timeline-image{
+    width: 160px;
+    height: 160px;
+    background-color: #ccc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+
+}
+ .timeline li .timeline-panel{
+    width: 40%;
+    float: left;
+    border: 1px solid #ccc;
+    position: relative;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #fff;
+ }
+
+ .timeline li .timeline-panel::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+   border-top: 15px solid transparent;
+   border-left: 15px solid #ccc;
+   border-right: 0px solid #ccc;
+   border-bottom: 15px solid transparent;
+   top: 80px;
+   right: -15px;
+
+ }
+ .timeline li .timeline-panel::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+   border-top: 14px solid transparent;
+   border-left: 14px solid #fff;
+   border-right: 0px solid #fff;
+   border-bottom: 14px solid transparent;
+   top: 81px;
+   right: -13px;
+ }
+ .timeline li.timeline-inverted .timeline-panel{
+    float: right;
+
+ }
+ .timeline li.timeline-inverted .timeline-panel::before{
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+ }
+ .timeline li.timeline-inverted .timeline-panel::after{
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;  
+ }
+ /* ini untuk kontak */
+ .contact{
+    background-color: #e9eceef1;
+    margin-top: -15px;
+ }
+.media{
+    height: 60px;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.fb{
+    background-color: rgb(46, 46, 206);
+}
+.bi-facebook{
+    color: #090d0e;
+}
+.fb:hover, .ig:hover, .tik:hover, .git:hover{
+    opacity: 80%;
+}
+.ig{
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+.bi-instagram{
+    color: #110a0a;
+}
+
+.tik{
+    background-color: #110a0a;
+   
+}
+.bi-tiktok{
+    color: white
+}
+
+.git{
+    background-color: #110a0a;
+}
+.bi-github{
+    color: #fff;
+}
+.form-control{
+    height: 60px !important; 
+}
+
+footer{
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    background-color:  #f0f4f7f1;
+    border-top: 1px solid rgb(206, 202, 202);
+  
+}
+
+.foot p{
+   font-size: 1.5rem;
+   padding-top: 7px;
+}
+.foot p span{
+    color: #979999;
+}
+
+
+
+
+
+
+/* media query */
+       /* exra large */
+       @media (max-width: 1200x) {
+       
+        }
+           /* laptop */
+           @media (max-width: 992px) {
+           .timeline::before{
+            left: 60px;
+           }
+           
+           .container-fluid{
+            display: block;
+           }
+           .timeline li .timeline-image{
+            left: 15px;
+            margin-left: 45px;
+            top: 16px;
+           }
+           .timeline li .timeline-panel{
+            width: calc(100% - 200px);
+            float: right;
+           }
+           .timeline li .timeline-panel::before{
+            border-left-width: 0;
+            border-right-width: 15px;
+            left: -15px;
+            right: auto;
+           }
+           .timeline li .timeline-panel::after{
+            border-left-width: 0;
+            border-right-width: 14px;
+            left: -13px;
+            right: auto;
+           }
+           .media{
+            height: 40px;
+           }
+           .bi-facebook, .bi-instagram, .bi-tiktok, .bi-github{
+            font-size: 1.6rem !important;
+           }
+        }
+    
+           /* tablet */
+           @media (max-width: 768px) {
+            .timeline li .timeline-image{
+                width: 140px;
+                height: 140px;
+            }
+            .container-fluid{
+                display: none;
+            }
+            .navbar-brand{
+                display: block;
+            }
+            .timeline-heading h3{
+                font-size: 1.2rem;
+            }
+            .timeline-heading span{
+                font-size: .8rem;
+            }
+            .timeline-body{
+                font-size: .8rem
+            }
+            .form-control{
+                height: 40px !important; 
+                box-shadow: var(--shadow);
+            }
+            .btn-outline-secondary{
+                transform: scale(.9);
+            }
+           .foot p{
+            font-size: 1.1rem;
+           }
+            
+           }
+           /* phone */
+           @media (max-width: 576px) {
+            .timeline li .timeline-image{
+                width: 80px;
+                height: 80px;
+            }
+            .timeline li .timeline-panel{
+                width: 70%;
+                transform: translateX(-18px);
+            }
+            .timeline li .timeline-panel::before{
+                top: 38px;
+            }
+            .timeline li .timeline-panel::after{
+                top: 31px;
+            }
+    
+    
+           }
