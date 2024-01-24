@@ -303,7 +303,7 @@ footer{
                 height: 80px;
             }
             .timeline li .timeline-panel{
-                width: 70%;
+                width: 60%;
                 transform: translateX(-18px);
             }
             .timeline li .timeline-panel::before{
