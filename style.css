@@ -44,7 +44,7 @@ body{
     font-size: 1.1rem;
  text-shadow: 0 1px 2px rgb(0 0 0 /0.5);
 }
-.about span, .contact span{
+.about span, .contact span, .musik span{
     text-transform: uppercase;
     color: #666;
     font-size: 0.9rem;
@@ -53,7 +53,7 @@ body{
     margin-bottom: 0.4rem;
     text-shadow: var(--shadow);
 }
-.about p, .contact p{
+.about p, .contact p, .musik p{
     font-size: 1rem;
     font-weight: 300;
 }
@@ -214,7 +214,22 @@ footer{
 .foot p span{
     color: #979999;
 }
+.musik{
+    margin-top: -14px;
+    background-color: #f3eded;
+    padding-top: 20px;
+  
+}
 
+.musik .card{
+    width: 18rem !important;
+}
+.musik .card-body audio{
+    width: 15rem;
+ }
+.musik .container .musics img{
+    margin-top: 10px;
+}
 
 
 
@@ -294,6 +309,12 @@ footer{
            .foot p{
             font-size: 1.1rem;
            }
+           .musik .card{
+            width: 13rem !important;
+        }
+           .musik .card-body audio{
+            width: 9rem;
+         }
             
            }
            /* phone */
