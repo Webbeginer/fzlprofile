@@ -313,7 +313,7 @@ footer{
             width: 13rem !important;
         }
            .musik .card-body audio{
-            width: 9rem;
+            width: 9rem !important;
          }
             
            }
